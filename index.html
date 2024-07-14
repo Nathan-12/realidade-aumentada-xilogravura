@@ -1,0 +1,176 @@
+<!--<html>
+  <body>
+    
+    <h1>
+      <a href="/angel.html">São Miguel</a>
+    </h1>
+    
+    <h1>
+      <a href="/peixe.html">Peixe Mutante</a>
+    </h1>
+    
+      <h1>
+      <a href="/giboia.html">A Gibóia e os Dragões</a>
+    </h1>
+    
+     <h1>
+      <a href="/dragao.html">Briga dos Dragões</a>
+    </h1>
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine de Obras</title>
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            
+        }
+
+        header {
+            background-color: #ffc000; /* Cor do header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .secao-boas-vindas {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 300px;
+            height: 350px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 4px solid #ffc000; /* Cor do header */
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-titulo {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-descricao {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Responsividade básica para cards em dispositivos móveis */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); /* 2 cards por linha */
+                margin: 10px;
+            }
+        }
+      
+      .container-cards {
+          display: flex;
+          flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+          flex-direction: row; /* Organiza os cards em linha (lado a lado) */
+          justify-content: space-between; /* Distribui os cards com espaço entre eles */
+          align-items: center; /* Alinha os cards verticalmente no topo */
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Museu Imaginário</h1>
+    </header>
+
+    <section class="secao-boas-vindas">
+        <h2>Bem-vindos à Vitrine de Obras!</h2>
+        <p>Explore as obras do nosso acervo e clique nos cards para saber mais.</p>
+    </section>
+  
+    <!--<section>
+        <h2>Multi-targets</h2>
+        <a href="multi-targets.html">Link</a>
+    </section> -->
+
+    <div class="container-cards">
+    <div class="card" onclick="window.location.href='peixe.html'">
+        <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/peixe_mutante.JPEG?v=1716730480771" alt="Peixe mutante">
+        <div class="card-titulo">Peixe Mutante</div>
+        <div class="card-descricao">Xilogravura - 2013</div>
+        <div class="card-descricao"><strong>Autor:</strong> Carlos Henrique</div>
+        <div class="card-descricao"><strong>Cidade:</strong> Crato-CE</div>
+        <button>
+          VÍDEO
+        </button>
+      
+      <button>
+          CÂMERA
+        </button>
+    </div>
+
+    <div class="card" onclick="window.location.href='dragao.html'">
+        <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/briga_dos_dragoes.JPEG?v=1716730440536" alt="Briga dos Dragões">
+        <div class="card-titulo">Briga dos Dragões</div>
+        <div class="card-descricao">Xilogravura - 2016</div>
+        <div class="card-descricao"><strong>Autor:</strong> J. Borges </div>
+        <div class="card-descricao"><strong>Cidade:</strong> Bezerros-PE</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='angel.html'">
+        <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/sao_miguel.png?v=1716730427859" alt="São Miguel">
+        <div class="card-titulo">São Miguel</div>
+        <div class="card-descricao">Xilogravura - 2008</div>
+        <div class="card-descricao"><strong>Autor:</strong> Francorli</div>
+        <div class="card-descricao"><strong>Cidade:</strong> Juazeiro do Norte-CE</div>
+    </div>
+
+    <div class="card" onclick="window.location.href='giboia.html'">
+        <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/giboia_dragao.jpeg?v=1716730471009" alt="A Gibóia e os Dragões">
+        <div class="card-titulo">A Gibóia e os Dragões</div>
+        <div class="card-descricao">Xilogravura - 2021</div>
+        <div class="card-descricao"><strong>Autor:</strong> Amaro Borges</div>
+        <div class="card-descricao"><strong>Cidade:</strong> Bezerros-PE</div>
+    </div>
+  </div>
+  
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  
+</body>
+</html>
