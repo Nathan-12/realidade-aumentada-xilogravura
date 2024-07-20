@@ -1,0 +1,186 @@
+<!--<html>
+  <body>
+    
+    <h1>
+      <a href="/angel.html">São Miguel</a>
+    </h1>
+    
+    <h1>
+      <a href="/peixe.html">Peixe Mutante</a>
+    </h1>
+    
+      <h1>
+      <a href="/giboia.html">A Gibóia e os Dragões</a>
+    </h1>
+    
+     <h1>
+      <a href="/dragao.html">Briga dos Dragões</a>
+    </h1>
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/como-usar.css">
+    <title>Vitrine de Obras</title>
+</head>
+<body>
+    <header>
+        <img class="img-header" src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/logo-expo-branca.png?v=1720894400848" alt="Peixe mutante">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Exposição Bestiário Nordestino</a></li>
+                <li><a href="como-usar.html">Como usar a plataforma</a></li>
+                <li><a href="sobre-equipe.html">Sobre a Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="secao-boas-vindas">
+        <h2>Como usar a plataforma</h2>
+        <br>
+        <button class="btn-3 btn-camera" >
+               Aprender como usar a plataforma
+        </button>
+    </section>
+  
+    <!--<section>
+        <h2>Multi-targets</h2>
+        <a href="multi-targets.html">Link</a>
+    </section> -->
+
+    <div class="container-cards">
+    <div class="card">
+        <div class="card-img-container">
+        <img src="assets/peixe_mutante.JPEG" alt="Peixe mutante">
+        </div>
+        <div class="card-titulo">Peixe Mutante</div>
+        <p>Xilogravura - 2013</p>
+      
+        <div class="card-descricao">AUTOR</div>
+        <p>Carlos Henrique</p>
+      
+        <div class="card-descricao">CIDADE</div>
+        <p>Crato, Ceará</p>
+      
+        <!-- Contêiner para os botões -->
+        <div class="button-container">
+            <button class="btn btn-video" onclick="window.location.href='peixe.html'">
+                <i class="fa-solid fa-camera"></i> Explorar com a câmera
+            </button>
+            <button class="btn-2 btn-camera" onclick="openModal('Peixe Mutante')" >
+               Ver informações em vídeo
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-container">
+       <img src="assets/briga_dos_dragoes.JPEG" alt="Briga dos Dragões">
+      </div>
+        <div class="card-titulo">Briga dos Dragões</div>
+        <p>Xilogravura - 2016</p>
+      
+        <div class="card-descricao">AUTOR</div>
+        <p>J. Borges</p>
+      
+        <div class="card-descricao">CIDADE</div>
+        <p>Bezerros, Pernambuco</p>
+      
+      <!-- Contêiner para os botões -->
+        <div class="button-container">
+            <button class="btn btn-video" onclick="window.location.href='dragao.html'">
+                <i class="fa-solid fa-camera"></i> Explorar com a câmera
+            </button>
+            <button class="btn-2 btn-camera" onclick="openModal('Briga dos Dragões')">
+               Ver informações em vídeo
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-container">
+      <img src="assets/sao_miguel.png" alt="São Miguel">
+      </div>
+        <div class="card-titulo">São Miguel</div>
+        <p>Xilogravura - 2008</p>
+      
+        <div class="card-descricao">AUTOR</div>
+        <p>Francorli</p>
+      
+        <div class="card-descricao">CIDADE</div>
+        <p>Juazeiro do Norte, Ceará</p>
+      
+      <!-- Contêiner para os botões -->
+        <div class="button-container">
+            <button class="btn btn-video" onclick="window.location.href='angel.html'">
+                <i class="fa-solid fa-camera"></i> Explorar com a câmera
+            </button>
+            <button class="btn-2 btn-camera" onclick="openModal('São Miguel')">
+               Ver informações em vídeo
+            </button>
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-container">
+      <img src="assets/giboia_dragao.jpeg" alt="A Gibóia e os Dragões">
+      </div>
+        <div class="card-titulo">A Gibóia e os Dragões</div>
+        <p>Xilogravura - 2021</p>
+      
+        <div class="card-descricao">AUTOR</div>
+        <p>Amaro Borges</p>
+      
+        <div class="card-descricao">CIDADE</div>
+        <p>Bezerros, Pernambuco</p>
+      
+      <!-- Contêiner para os botões -->
+        <div class="button-container">
+            <button class="btn btn-video" onclick="window.location.href='giboia.html'">
+                <i class="fa-solid fa-camera"></i> Explorar com a câmera
+            </button>
+            <button class="btn-2 btn-camera" onclick="openModal('A Gibóia e os Dragões')">
+               Ver informações em vídeo
+            </button>
+        </div>
+    </div>
+  </div>
+  
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <h2 id="modal-title"></h2>
+              </div>
+              <div class="modal-body">
+                  <p>Vídeo sobre a obra selecionada.</p>
+                  <!-- Aqui você pode adicionar o conteúdo do vídeo -->
+              </div>
+              <div class="modal-footer">
+                  <button class="btn" onclick="closeModal()">Fechar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="scripts/index.js"></script>
+
+</body>
+</html>
