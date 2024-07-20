@@ -276,3 +276,16 @@ font-size: 16px;
 .nav-menu ul li a:hover {
 text-decoration: underline;
 }
+
+.svg-button {
+    background-color: #ffffff;
+    border: 1px solid black; /* Borda preta */
+    padding: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* ou fixed, dependendo do efeito desejado */
+    right: 0;
+    top: 13%; /* Para centralizar verticalmente; ajuste conforme necessário */
+    transform: translateY(-50%); /* Para compensar o efeito do top: 50% e centralizar verticalmente */
+    margin-right: 5px;
+}

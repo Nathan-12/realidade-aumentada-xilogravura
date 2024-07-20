@@ -35,122 +35,64 @@
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Exposição Bestiário Nordestino</a></li>
-                <li><a href="como-usar.html">Como usar a plataforma</a></li>
+                <li><a href="como-usar.html">Sobre a exposição</a></li>
                 <li><a href="sobre-equipe.html">Sobre a Equipe</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="secao-boas-vindas">
-        <h2>Como usar a plataforma</h2>
-        <br>
-        <button class="btn-3 btn-camera" >
-               Aprender como usar a plataforma
-        </button>
-    </section>
+      <h2>Sobre a exposição</h2>
+      <button class="svg-button" onclick="openModal()">
+        <img src="assets/icone/libras.svg" alt="Logo">
+    </button>
+      <br>
+      <p style="text-align: justify; margin: 20px;">
+        “Bestiário Nordestino – Um olhar sobre a gravura fantástica”, com curadoria de Rafael Limaverde e Marquinhos Abu, 
+        traça um panorama da gravura “Fantástica”, composta por imagens de monstros e mitos originários do imaginário popular nordestino, 
+        produzidas no século XX e XXI por 21 gravadores do Ceará, Paraíba, Rio Grande do Norte e Pernambuco. 
+        A exposição teve sua primeira edição em 2016, em Fortaleza contemplado no Edital Temporada de Arte Cearense e entrou em 
+        cartaz no Centro de Arte e Cultura Dragão do Mar. Foi contemplado também nos seguintes editais: Prêmio Funarte Conexão 
+        Circulação Artes Visuais – 2018, Galeria Flávio de Carvalho, no Complexo Cultural Funarte São Paulo – SP e Centro Cultural Banco do 
+        Nordeste Juazeiro – CE, Edital Cultural CCBNB – 2019 Sousa – PB e Festival de Artes Jackson do Pandeiro – Funesc 2019 – João Pessoa – PB
+      </p>
+      <br>
+      <h3 style="text-align: initial; margin-left: 20px;">Artistas</h3>
+      <ul style="text-align: initial;">
+        <li>Abraão Batista (Juazeiro do Norte/CE)</li>
+        <li>Adriano Brito (Crato/CE)</li>
+        <li>Antônio Lino (Crato/CE)</li>
+        <li>Amaro Borges (Bezerros/PE)</li>
+        <li>Airton Cardim (Olinda/PE)</li>
+        <li>Guto Bitu (Crato/CE)</li>
+        <li>Carlos Henrique (Crato/CE)</li>
+        <li>Carlus Campos (Fortaleza/CE)</li>
+        <li>Damásio de Paulo (Juazeiro/CE)</li>
+        <li>Dila (Caruaru/PE)</li>
+        <li>Francorli (Juazeiro/CE)</li>
+        <li>J. Borges (Bezerros/PE)</li>
+        <li>José Carlos Leite (Condado/PB)</li>
+        <li>Lourenço Gouveia (Recife/PE)</li>
+        <li>Maurício Costa (Recife/PE)</li>
+        <li>Nilo (Juazeiro/CE)</li>
+        <li>Rafael Limaverde (Fortaleza/CE)</li>
+        <li>Stênio Diniz (Juazeiro/CE)</li>
+        <li>Sebastião de Paula (Fortaleza/CE)</li>
+        <li>Walderêdo Gonçalves (Crato/CE)</li>
+        <li>Justino P. Bandeira (Juazeiro do Norte/CE)</li>
+      </ul>
+
+      <!--
+      ● , , , , , , .
+      -->
+  </section>
   
     <!--<section>
         <h2>Multi-targets</h2>
         <a href="multi-targets.html">Link</a>
     </section> -->
 
-    <div class="container-cards">
-    <div class="card">
-        <div class="card-img-container">
-        <img src="assets/peixe_mutante.JPEG" alt="Peixe mutante">
-        </div>
-        <div class="card-titulo">Peixe Mutante</div>
-        <p>Xilogravura - 2013</p>
-      
-        <div class="card-descricao">AUTOR</div>
-        <p>Carlos Henrique</p>
-      
-        <div class="card-descricao">CIDADE</div>
-        <p>Crato, Ceará</p>
-      
-        <!-- Contêiner para os botões -->
-        <div class="button-container">
-            <button class="btn btn-video" onclick="window.location.href='peixe.html'">
-                <i class="fa-solid fa-camera"></i> Explorar com a câmera
-            </button>
-            <button class="btn-2 btn-camera" onclick="openModal('Peixe Mutante')" >
-               Ver informações em vídeo
-            </button>
-        </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img-container">
-       <img src="assets/briga_dos_dragoes.JPEG" alt="Briga dos Dragões">
-      </div>
-        <div class="card-titulo">Briga dos Dragões</div>
-        <p>Xilogravura - 2016</p>
-      
-        <div class="card-descricao">AUTOR</div>
-        <p>J. Borges</p>
-      
-        <div class="card-descricao">CIDADE</div>
-        <p>Bezerros, Pernambuco</p>
-      
-      <!-- Contêiner para os botões -->
-        <div class="button-container">
-            <button class="btn btn-video" onclick="window.location.href='dragao.html'">
-                <i class="fa-solid fa-camera"></i> Explorar com a câmera
-            </button>
-            <button class="btn-2 btn-camera" onclick="openModal('Briga dos Dragões')">
-               Ver informações em vídeo
-            </button>
-        </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img-container">
-      <img src="assets/sao_miguel.png" alt="São Miguel">
-      </div>
-        <div class="card-titulo">São Miguel</div>
-        <p>Xilogravura - 2008</p>
-      
-        <div class="card-descricao">AUTOR</div>
-        <p>Francorli</p>
-      
-        <div class="card-descricao">CIDADE</div>
-        <p>Juazeiro do Norte, Ceará</p>
-      
-      <!-- Contêiner para os botões -->
-        <div class="button-container">
-            <button class="btn btn-video" onclick="window.location.href='angel.html'">
-                <i class="fa-solid fa-camera"></i> Explorar com a câmera
-            </button>
-            <button class="btn-2 btn-camera" onclick="openModal('São Miguel')">
-               Ver informações em vídeo
-            </button>
-        </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img-container">
-      <img src="assets/giboia_dragao.jpeg" alt="A Gibóia e os Dragões">
-      </div>
-        <div class="card-titulo">A Gibóia e os Dragões</div>
-        <p>Xilogravura - 2021</p>
-      
-        <div class="card-descricao">AUTOR</div>
-        <p>Amaro Borges</p>
-      
-        <div class="card-descricao">CIDADE</div>
-        <p>Bezerros, Pernambuco</p>
-      
-      <!-- Contêiner para os botões -->
-        <div class="button-container">
-            <button class="btn btn-video" onclick="window.location.href='giboia.html'">
-                <i class="fa-solid fa-camera"></i> Explorar com a câmera
-            </button>
-            <button class="btn-2 btn-camera" onclick="openModal('A Gibóia e os Dragões')">
-               Ver informações em vídeo
-            </button>
-        </div>
-    </div>
-  </div>
+    
   
   <div vw class="enabled">
     <div vw-access-button class="active"></div>

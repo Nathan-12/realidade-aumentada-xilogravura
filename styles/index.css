@@ -283,6 +283,11 @@ header {
     padding: 1px;
     border-radius: 5px;
     cursor: pointer;
+    position: absolute; /* ou fixed, dependendo do efeito desejado */
+    right: 0;
+    top: 13%; /* Para centralizar verticalmente; ajuste conforme necessário */
+    transform: translateY(-50%); /* Para compensar o efeito do top: 50% e centralizar verticalmente */
+    margin-right: 5px;
 }
 
 .svg-button img {
@@ -369,7 +374,7 @@ video {
     box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
 }
 .video-container img {
-    max-width: 100%;
+    max-width: 70%;
     max-height: 100%;
     margin: 5px;
     flex: 1 1 45%; /* Flexível, ocupa até 45% da largura do contêiner */
