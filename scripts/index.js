@@ -29,6 +29,9 @@
       modal.style.display = 'none';
   }
 
+  // Adiciona o evento "ended" ao vídeo para fechar o modal ao término do vídeo
+  document.getElementById('video-content').addEventListener('ended', closeModal);
+
   // Fechar o modal ao clicar fora do vídeo
   document.addEventListener('click', function(event) {
       var modal = document.getElementById('modal-media-video');

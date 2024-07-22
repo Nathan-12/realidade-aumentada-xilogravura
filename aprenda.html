@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/sobre-equipe.css">
+    <link rel="stylesheet" href="styles/aprenda.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/css/uikit.min.css" />
     <title>Vitrine de Obras</title>
 </head>
 <body>
@@ -43,49 +44,17 @@
     </header>
 
     <section class="secao-boas-vindas">
-        <h2>Sobre a equipe</h2>
-    </section>
+      <h2>Aprenda a usar o site</h2>
+      <video class="video-modal" src="https://nathan-mestrado.b-cdn.net/tutorial/aprenda.mp4" width="1280" height="720" controls playsinline autoplay></video>
+
+  </section>
   
     <!--<section>
         <h2>Multi-targets</h2>
         <a href="multi-targets.html">Link</a>
     </section> -->
 
-    <div class="container-cards">
-    <div class="card">
-        <div class="card-img-container">
-        <img src="assets/profile_nathan.png" alt="Peixe mutante">
-        </div>
-        <div class="card-titulo">Nathan Lima Batista</div>
-        <br>
-        <p>Bacharel em Sistemas de Informação pela Universidade Federal do Ceará (UFC) e 
-          atualmente é mestrando em Computação na mesma instituição. 
-          Trabalha como analista de sistemas e realiza pesquisas na área de acessibilidade na computação.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-img-container">
-      <img src="" alt="Foto da Lucia">
-      </div>
-      <div class="card-titulo">Lúcia</div>
-      <br>
-      <p>Bacharel em Sistemas de Informação pela Universidade Federal do Ceará (UFC) e 
-        atualmente é mestrando em Computação na mesma instituição. 
-        Trabalha como analista de sistemas e realiza pesquisas na área de acessibilidade na computação.</p>
-    </div>
-
-    <div class="card">
-      <div class="card-img-container">
-      <img src="assets/profile_jessyca.png" alt="Peixe mutante">
-      </div>
-      <div class="card-titulo">Jessyca Coutinho Fernandes</div>
-      <br>
-      <p>Bacharel em Psicologia pela Unicatólica em Quixadá-CE, com especialização em Impactos da Violência na 
-        Escola pela Fiocruz. Possui formação em Terapia do Esquema pelo Instituto de Psicologia e Carreira (IPC) e 
-        atendimento em Saúde Mental para o público surdo pelo Instituto de Psicologia e Estudos Surdos (IPES). Atualmente é docente do curso de Psicologia (FAUNIQ).</p>
-    </div>
-
-  </div>
+    
   
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -94,6 +63,13 @@
     </div>
   </div>
   
+  
+<div id="modal-media-video" class="custom-modal">
+  <div class="custom-modal-dialog">
+      <button class="custom-modal-close" onclick="closeModal()">×</button>
+      <video id="video-content" src="https://nathan-mestrado.b-cdn.net/tutorial/sobre_exposicao.mov" width="320" height="240" controls playsinline autoplay></video>
+  </div>
+</div>
   
   <!-- Modal -->
   <div id="myModal" class="modal">
@@ -114,8 +90,9 @@
       </div>
   </div>
   
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/como-usar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.7/dist/js/uikit-icons.min.js"></script>
 
 </body>
 </html>

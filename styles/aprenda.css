@@ -144,6 +144,7 @@ margin: -20px -20px 0 -20px; /* Compensa o padding do card */
 
 .card img {
 width: 100%;
+height: 200px;
 object-fit: cover;
 border-radius: 10px 10px 0 0;
 }
@@ -275,3 +276,153 @@ font-size: 16px;
 .nav-menu ul li a:hover {
 text-decoration: underline;
 }
+
+.svg-button {
+background-color: #ffffff;
+border: 1px solid black; /* Borda preta */
+padding: 1px;
+border-radius: 5px;
+cursor: pointer;
+position: absolute; /* ou fixed, dependendo do efeito desejado */
+right: 0;
+top: 13%; /* Para centralizar verticalmente; ajuste conforme necessário */
+transform: translateY(-50%); /* Para compensar o efeito do top: 50% e centralizar verticalmente */
+margin-right: 5px;
+}
+
+.svg-button img {
+width: 40px;
+height: 40px;
+}
+
+/* .svg-button:hover {
+background-color: #d8d8d8;
+} */
+
+/* Estilo do modal */
+.custom-modal {
+position: fixed;
+top: 50%;
+right: 20px;
+transform: translateY(-50%); /* Centraliza verticalmente */
+z-index: 1050; /* Garantir que o modal esteja acima de outros conteúdos */
+display: none; /* Inicialmente escondido */
+background-color: transparent;
+}
+
+.custom-modal-dialog {
+display: flex;
+align-items: center; /* Centraliza verticalmente o conteúdo */
+justify-content: center; /* Centraliza horizontalmente o conteúdo */
+background-color: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+padding: 0;
+position: relative;
+}
+
+.custom-modal-close {
+position: absolute;
+top: -10px;
+right: -10px;
+background: white;
+border-radius: 50%;
+border: none;
+cursor: pointer;
+padding: 5px;
+font-size: 18px;
+z-index: 1060; /* Garante que o botão de fechamento esteja acima de outros elementos */
+}
+
+/* Estilo do vídeo */
+video {
+display: block;
+border: 5px solid #000000; /* Borda azul ao redor do vídeo */
+border-radius: 5px;
+}
+
+.uk-modal-body {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+
+}
+.uk-switcher > div {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.video-modal {
+max-width: 90%;
+max-height: auto;
+margin: auto;
+}
+
+.video-container {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
+}
+.video-container img,
+.video-container video {
+box-sizing: border-box; /* Inclui padding e borda no cálculo da largura e altura */
+}
+.video-container img {
+max-width: 70%;
+max-height: 100%;
+margin: 5px;
+flex: 1 1 45%; /* Flexível, ocupa até 45% da largura do contêiner */
+}
+.video-container video {
+max-width: 100%;
+max-height: 100%;
+margin: 5px;
+flex: 1 1 45%; /* Flexível, ocupa até 45% da largura do contêiner */
+}
+@media (max-width: 768px) {
+.uk-modal-body {
+height: auto; /* Permite altura variável em telas menores */
+}
+.video-container {
+flex-direction: column; /* Alinha a imagem e o vídeo verticalmente em telas pequenas */
+align-items: stretch; /* Faz com que a imagem e o vídeo ocupem toda a largura */
+}
+.video-container img,
+.video-container video {
+flex: 1 1 auto; /* Cada item ocupa toda a largura disponível */
+width: 100%; /* Garante que o item ocupe 100% da largura do contêiner */
+margin: 10px 0; /* Ajusta a margem para telas menores */
+}
+}
+
+.uk-tab {
+display: flex;
+align-items: center;
+}
+.uk-tab li {
+display: flex;
+align-items: center;
+}
+.uk-tab img {
+width: 40px; /* Aumente o tamanho do ícone conforme necessário */
+height: auto;
+margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+.uk-tab a {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: inherit;
+}
+.uk-tab .uk-active a {
+font-weight: bold; /* Destaque para a aba ativa */
+}
+
+
