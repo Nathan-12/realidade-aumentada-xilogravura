@@ -35,11 +35,9 @@ const buttonInfoDragao = document.querySelector("#web-button-dragao");
 const buttonDescriptionDragao = document.querySelector("#email-button-dragao");
 
 const showInfo = () => {
-  targetSaoMiguel.addEventListener('targetFound', event => {
-    targetFoundSaoMiguel();
-  });
+  targetFoundSaoMiguel();
   
-  
+
   targetSaoMiguel.addEventListener('targetLost', event => {
     targetLost();
   });
@@ -224,7 +222,7 @@ const showAvatar = (onDone) => {
   }, 10);
 }
 
-AFRAME.registerComponent('mytarget', {
+AFRAME.registerComponent('angelTarget', {
   init: function () {
     this.el.addEventListener('targetFound', event => {
       console.log("target found");
@@ -240,6 +238,7 @@ AFRAME.registerComponent('mytarget', {
     });
     this.el.addEventListener('targetLost', event => {
       console.log("target found");
+      targetLost();
     });
     //this.el.emit('targetFound');
   }
