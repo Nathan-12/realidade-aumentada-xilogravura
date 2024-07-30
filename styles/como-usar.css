@@ -424,4 +424,47 @@ color: inherit;
 font-weight: bold; /* Destaque para a aba ativa */
 }
 
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+}
 
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer .footer-links li {
+    margin-left: 20px;
+}
+
+footer .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
