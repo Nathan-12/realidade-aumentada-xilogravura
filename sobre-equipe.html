@@ -37,12 +37,28 @@
             <li><a href="index.html">Exposição Bestiário Nordestino</a></li>
             <li><a href="como-usar.html">Sobre a exposição</a></li>
             <li><a href="aprenda.html">Aprenda a usar o site</a></li>
-            <li><a href="sobre-equipe.html">Sobre a equipe</a></li>
+            <li><a href="sobre-equipe.html">Sobre o protótipo</a></li>
         </ul>
         </nav>
     </header>
 
     <section class="secao-boas-vindas">
+        <h2>Sobre o protótipo</h2>
+        <br>
+        <p style="text-align: left; margin: 20px; color: black;">
+          O protótipo é fruto de uma pesquisa de mestrado pela Universidade Federal do Ceará (UFC) - Campus Quixadá, 
+          no Programa de Pós-graduação em Computação (PCOMP), intitulada Arte e Cultura para Pessoas Surdas: 
+          Uma Releitura Acessível e Interativa da Exposição "Bestiário Nordestino", desenvolvida pelo aluno Nathan Lima, 
+          sob a orientação da professora doutora Ingrid Teixeira. O projeto consistiu na construção desse protótipo, 
+          contendo algumas das obras presentes na exposição Bestiário Nordestino, tornando-as acessíveis para a comunidade surda, 
+          com a implementação de vídeos em Libras explicativos sobre o protótipo e sobre as obras. Além disso, 
+          disponibilizamos um recurso de realidade aumentada, possibilitando a interação com as obras para 
+          obter mais detalhes sobre o autor e a descrição da obra. Para a criação dos vídeos, contou-se com a participação de Lúcia de Fátima, 
+          uma artista surda da cidade de Quixeramobim, Ceará, que participa dos vídeos relacionados às obras de arte, 
+          descrevendo as obras e fornecendo informações sobre os autores. Além dela, também contou-se com a participação de Jessyca Coutinho, 
+          uma psicóloga bilíngue, que produziu os vídeos explicativos sobre o protótipo.
+        </p>
+        <br>
         <h2>Sobre a equipe</h2>
     </section>
   
@@ -56,7 +72,11 @@
         <div class="card-img-container">
         <img src="assets/profile_nathan.png" alt="Foto Nathan">
         </div>
-        <div class="card-titulo">Nathan Lima Batista</div>
+        <div class="card-titulo">Nathan Lima Batista  <br/>
+          <button class="svg-button" onclick="openModalNathan()">
+            <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/libras.svg?v=1725568635564" alt="Logo">
+          </button>
+        </div>
         <br>
         <p>Bacharel em Sistemas de Informação pela Universidade Federal do Ceará (UFC) e 
           atualmente é mestrando em Computação na mesma instituição. 
@@ -65,9 +85,26 @@
 
     <div class="card">
       <div class="card-img-container">
+        <img src="assets/ingrid.jpeg" alt="Foto Ingrid">
+      </div>
+      <div class="card-titulo">Ingrid Teixeira Monteiro
+        <button class="svg-button" onclick="openModalLucia()">
+          <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/libras.svg?v=1725568635564" alt="Logo">
+        </button>
+      </div>
+      <br>
+      <p>Professora adjunta da UFC, campus Quixadá, com doutorado (2015) e mestrado (2011) em Informática pela PUC-Rio, ambos em Interação Humano-Computador. Graduada em Comunicação Social – Publicidade e Telemática pela UFC e IFCE (2006). Atua em Ciência da Computação, com foco em Interação Humano-Computador, Engenharia Semiótica, desenvolvimento por usuários finais, informática na educação, acessibilidade, sistemas de informação, programação e testes.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-img-container">
         <img src="assets/profile_lucia.png" alt="Foto Lucia">
       </div>
-      <div class="card-titulo">Lúcia de Fátima Oliveira Lima</div>
+      <div class="card-titulo">Lúcia de Fátima Oliveira Lima
+        <button class="svg-button" onclick="openModalLucia()">
+          <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/libras.svg?v=1725568635564" alt="Logo">
+        </button>
+      </div>
       <br>
       <p>Graduada em Pedagogia e pós-graduada em Libras e Educação para Surdos. 
         Atua como professora de Libras e trabalha no Projeto Espaço Bilíngue em Escola Comum na E.E.F. Dona Luíza Távora em Quixeramobim-CE.</p>
@@ -77,7 +114,11 @@
       <div class="card-img-container">
       <img src="assets/profile_jessyca.png" alt="Foto Jessyca">
       </div>
-      <div class="card-titulo">Jessyca Coutinho Fernandes</div>
+      <div class="card-titulo">Jessyca Coutinho Fernandes
+        <button class="svg-button" onclick="openModalJessyca()">
+          <img src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/libras.svg?v=1725568635564" alt="Logo">
+        </button>
+      </div>
       <br>
       <p>Bacharel em Psicologia pela Unicatólica em Quixadá-CE, com especialização em Impactos da Violência na 
         Escola pela Fiocruz. Possui formação em Terapia do Esquema pelo Instituto de Psicologia e Carreira (IPC) e 
@@ -92,6 +133,30 @@
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
+
+  <!-- Modal de vídeo Nathan -->
+<div id="modal-media-video" class="custom-modal">
+  <div class="custom-modal-dialog">
+      <button class="custom-modal-close" onclick="closeModalNathan()">X</button>
+      <video id="video-content" src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/bio_nathan.mp4?v=1725569619495" width="235" height="417" controls playsinline autoplay></video>
+  </div>
+</div>
+
+ <!-- Modal de vídeo Lucia -->
+ <div id="modal-media-video-lucia" class="custom-modal">
+  <div class="custom-modal-dialog">
+      <button class="custom-modal-close" onclick="closeModalLucia()">X</button>
+      <video id="video-content-lucia" src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/lucia_bio.mp4?v=1725569622899" width="235" height="417" controls playsinline autoplay></video>
+  </div>
+</div>
+
+<!-- Modal de vídeo Jessyca -->
+<div id="modal-media-video-jessyca" class="custom-modal">
+  <div class="custom-modal-dialog">
+      <button class="custom-modal-close" onclick="closeModalJessyca()">X</button>
+      <video id="video-content-jessyca" src="https://cdn.glitch.global/6f4a278f-3d98-4976-81c4-6f99d4e811c9/bio_jessyca.mp4?v=1725569617748" width="235" height="417" controls playsinline autoplay></video>
+  </div>
+</div>
   
   
   <!-- Modal -->
@@ -118,14 +183,13 @@
         <div class="footer-content">
             <p>Todos os direitos reservados das obras: <a style="color: white;" href="https://bestiarionordestino.art.br/" target="_blank">&copy; Bestiário Nordestino - Um olhar sobre a gravura fantástica</a></p>
             <ul class="footer-links">
-                <li>Contato: nathanlima.b@gmail.com</li>
+                <li>Contato<li style="color: white;">Contato: nathanlima.b@gmail.com</li>
             </ul>
         </div>
     </div>
 </footer>
-  
+  <script src="scripts/sobre-equipe.js"></script>
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script src="scripts/index.js"></script>
 
 </body>
 </html>
